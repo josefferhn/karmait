@@ -8,6 +8,7 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/bootstrap-custom.css" rel="stylesheet">
 <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+<link href="css/owl.carousel.min.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 
 	
@@ -136,8 +137,133 @@
 	
 	
 	
+	<section id="clients" class="section">
+		<div class="container">
+		
+			<h2 class="titulos text-center">What Our Clients Say</h2>
+			<p class="subtitulos">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus quod maxime placeat facere possimus, omnis voluptas assumenda.</p>
+			
+			
+			<div class="owl-carousel">
+			
+				<article class="testimonial">
+				
+					<img src="img/team-01.png" alt="team 01" class="img-fluid">
+					<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
+					<h4>Jane Smith</h4>
+					
+				</article>
+				
+				<article class="testimonial">
+				
+					<img src="img/team-02.png" alt="team 01" class="img-fluid">
+					<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
+					<h4>Edward Klarson</h4>
+					
+				</article>
+				
+				<article class="testimonial">
+				
+					<img src="img/team-03.jpg" alt="team 01" class="img-fluid">
+					<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
+					<h4>Jessica Robinson</h4>
+					
+				</article>
+				
+				<article class="testimonial">
+				
+					<img src="img/team-04.png" alt="team 01" class="img-fluid">
+					<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
+					<h4>Jane Smith</h4>
+					
+				</article>
+			
+			</div>
+			
+		</div>
+	</section>
 	
 	
+	
+
+	
+	
+	
+	<footer>
+		<div class="container">
+		
+			<div class="row">
+			
+				<article class="col-lg-4 col-sm-4 col-12">
+					<img src="img/logo-white.webp" alt="logo footer" class="img-fluid">
+					<ul class="list-inline mt-5">
+						<li class="list-inline-item">
+							<a href="#"><i class="lab la-twitter"></i></a>
+						</li>
+						<li class="list-inline-item">
+							<a href="#"><i class="lab la-facebook-f"></i></a>
+						</li>
+						<li class="list-inline-item">
+							<a href="#"><i class="lab la-instagram"></i></a>
+						</li>
+						<li class="list-inline-item">
+							<a href="#"><i class="lab la-youtube"></i></a>
+						</li>
+					</ul>
+				</article>
+			
+				<article class="col-lg-2 col-sm-2 col-6">
+					<h5>Company</h5>
+					<ul>
+						<li><a href="#">Demos</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Service</a></li>
+						<li><a href="#">Pricing</a></li>
+						<li><a href="#">Author Bio</a></li>
+						<li><a href="#">Contacts</a></li>
+					</ul>
+				</article>
+				
+				<article class="col-lg-2 col-sm-2 col-6">
+					<h5>Shop</h5>
+					<ul>
+						<li><a href="#">Demos</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Service</a></li>
+						<li><a href="#">Pricing</a></li>
+						<li><a href="#">Author Bio</a></li>
+						<li><a href="#">Contacts</a></li>
+					</ul>
+				</article>
+				
+				<article class="col-lg-2 col-sm-2 col-6">
+					<h5>Industries</h5>
+					<ul>
+						<li><a href="#">Demos</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Service</a></li>
+						<li><a href="#">Pricing</a></li>
+						<li><a href="#">Author Bio</a></li>
+						<li><a href="#">Contacts</a></li>
+					</ul>
+				</article>
+				
+				<article class="col-lg-2 col-sm-2 col-6">
+					<h5>Usefull Links</h5>
+					<ul>
+						<li><a href="#">Demos</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Service</a></li>
+						<li><a href="#">Pricing</a></li>
+						<li><a href="#">Author Bio</a></li>
+						<li><a href="#">Contacts</a></li>
+					</ul>
+				</article>
+				
+			</div>
+		
+		</div>
+	</footer>
 	
 	
 	
@@ -146,6 +272,38 @@
 	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	
+	<script>
+	
+		$(document).ready(function(){
+			
+		  $(".owl-carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                autoplay: true,
+                smartSpeed: 800,
+                margin: 30,
+                center: true,
+                dots: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    480: {
+                        items: 2
+                    },
+                    992: {
+                        items: 3
+                    }
+                }
+            });
+			
+			
+		});
+		
+	</script>
+	
 	
 	
 	
